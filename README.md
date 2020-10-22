@@ -1,6 +1,7 @@
 # Dockerからホストのディレクトリをマウントできることを確認するためのdocker-compose
 以下はWindowsの場合を想定した手順になっています。  
 その他の環境の方は適宜自分の環境に合わせて手順を読み替えてください。  
+※ファイルパスはgithubからzipでダウンロードした前提で記載しています。
 
 1. 勉強会当日に使用する作業用フォルダを作成します。
    ここでは「c:\work」を作成したとします。
@@ -8,7 +9,7 @@
 3. 以下のコマンドを実行してください。  
   実行した際に表示されるログに「Mount is successful.」という文字列が含まれていたら成功です。
 ```
-$ cd C:\work\mounttest ※入力箇所
+$ cd C:\work\docker-mount-test-main ※入力箇所
 $ docker-compose up ※入力箇所
 Creating network "mounttest_default" with the default driver
 Pulling mounttest (ubuntu:18.04)...

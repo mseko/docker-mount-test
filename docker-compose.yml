@@ -4,5 +4,5 @@ services:
   mounttest:
     image: ubuntu:18.04
     volumes:
-      - ../mounttest/testdir:/testdir
+      - ../docker-mount-test-main/testdir:/testdir
     command: cat /testdir/testfile.txt
