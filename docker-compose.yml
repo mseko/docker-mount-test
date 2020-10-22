@@ -1,0 +1,8 @@
+version: '3.7'
+
+services:
+  mounttest:
+    image: ubuntu:18.04
+    volumes:
+      - ../mounttest/testdir:/testdir
+    command: cat /testdir/testfile.txt
